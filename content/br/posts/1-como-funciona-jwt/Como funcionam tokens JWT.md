@@ -7,7 +7,7 @@ title = 'A lógica da segurança por trás dos tokens JWT'
 
 # A lógica da segurança por trás dos tokens JWT
 
-Eu, mesmo sabendo fazer autenticação RESTful no Spring por bastante tempo, ainda confundia minha cabeça pra entender como o JWT é seguro. Esse é um apanhado geral do tema.
+Eu, mesmo sabendo fazer autenticação RESTful no Spring por bastante tempo, ainda confundia minha cabeça pra entender como o JWT é seguro. Como assim passar informações em um token que pode ser facilmente ser decodificado? Esse é um apanhado geral do tema que busca explicar isso.
 
 ## 1: Tokens web
 
