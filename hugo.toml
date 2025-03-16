@@ -1,6 +1,6 @@
 title = "Awesome Hugo blog"
 baseURL = 'https://hba.sid.one/'
-
+canonifyURLs = true
 # This is what goes in <html lang="">
 languageCode = 'en-us'
 

@@ -94,15 +94,15 @@ A ideia é que, usando um array, a função de dispersão defina a posição do 
     
 
     <link rel="canonical" href="http://localhost:1313/posts/3-dsa-hashtables/hashtables/">
-    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
-    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+    <link href="http://localhost:1313/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="http://localhost:1313/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="http://localhost:1313/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico">
 
 
 
@@ -114,14 +114,14 @@ A ideia é que, usando um array, a função de dispersão defina a posição do 
 <meta name="theme-color" content="#434648">
 
     
-    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="http://localhost:1313/icons/favicon.svg">
 
     
     
 </head>
 <body data-theme = "dark" class="notransition">
 
-<script src="/js/theme.js"></script>
+<script src="http://localhost:1313/js/theme.js"></script>
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
@@ -146,21 +146,21 @@ stroke-linejoin="round" class="feather feather-home">
                 
                 
                 <li>
-                    <a class="menu-link " href="/">
+                    <a class="menu-link " href="http://localhost:1313/">
                         Início
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link active" href="/posts/">
+                    <a class="menu-link active" href="http://localhost:1313/posts/">
                         Publicações
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/pages/about/">
+                    <a class="menu-link " href="http://localhost:1313/pages/about/">
                         Sobre
                     </a>
                     
@@ -224,34 +224,34 @@ stroke-linejoin="round" class="feather feather-home">
 <p>Uma função de dispersão comum seria h(x) = x%tamanhoDoArray.</p>
 <h2 id="2-inserção">2. Inserção</h2>
 <p>Considere um array de tamanho 12:</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/image.png" alt=""></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/image.png" alt=""></p>
 <p>Vamos inserir alguns números. 23, 178, 38 e 56. Ficamos assim:</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/image-3.png" alt="alt text"></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/image-3.png" alt="alt text"></p>
 <p>Como a posição do número no array vai depender do resto da divisão dele por 12, você pode esperar que haja uma distribuição uniforme ao longo do array.</p>
 <p>Mas vez ou outra o resultado da função hash pra um elemento vai ser uma posição que já está ocupada, e temos que resolver isso de alguma forma.</p>
 <h2 id="3-lidando-com-colisões">3. Lidando com colisões</h2>
 <p>Vamos pegar o exemplo do item 2 e adicionar o número <b>14</b>.</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/image-7.png" alt="alt text"></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/image-7.png" alt="alt text"></p>
 <p>Ooops, ocupado. Há duas formas mais comuns de lidar com colisões:</p>
 <h3 id="31-encadeamento">3.1 Encadeamento</h3>
 <p>Uma forma simples de resolver o problema das colisões é armazenar os itens numa sequência (lista, array). Você pode desde o início usar um array de listas ligadas, por exemplo. No meu caso, eu criei um objeto &ldquo;Elemento&rdquo; que vai armazenar o valor do elemento e uma referência para o próximo elemento naquele endereço, caso haja um.</p>
 <p>Vejamos:</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/image-9.png" alt="alt text"></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/image-9.png" alt="alt text"></p>
 <p>Dessa forma, nosso algoritmo de pesquisa vai precisar iterar sobre todos os elementos ligados ao primeiro do índice, para conferir se o item buscado não está lá.</p>
 <h3 id="32-endereçamento">3.2 Endereçamento</h3>
 <p><u>Endereçamento</u> é um método onde arranjamos o elemento em outra posição no array, e pode ser feito tradicionalmente de duas formas:</p>
 <h3 id="321-linear-probing">3.2.1 Linear probing</h3>
 <p>Linear probing consiste em deslocar o elemento para o índice seguinte. Retomando o exemplo da imagem do item 3:</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/image-11.png" alt="alt text"></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/image-11.png" alt="alt text"></p>
 <p>E então nossa busca precisa passar por todos os espaços preenchidos até achar um elemento vazio.</p>
 <p>Mas há um problema aí. Vamos considerar o seguinte: Inserimos o número 26 na tabela, que também depois da função de hashing acaba caindo no índice 2. Depois, por algum motivo, removemos o elemento 14.</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/image-12.png" alt="alt text"></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/image-12.png" alt="alt text"></p>
 <p>Até aí tudo bem, NÉ?. Mas vamos fazer uma pesquisa pelo número 26:</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/image-13.png" alt="alt text"></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/image-13.png" alt="alt text"></p>
 <p>O &ldquo;buraco&rdquo; que deixamos ao remover o número 14 faz com que não consigamos chegar no 26, que foi posto na &ldquo;mesma posição&rdquo; mas que agora não pode ser acessado. Você pode até dizer que é só procurarmos no resto do array, mas isso torna a complexidade temporal da busca O(N), fazendo com que nossa implementação vire basicamente uma lista ligada:</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/2024-09-28-23-53-27-image.png" alt=""></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/2024-09-28-23-53-27-image.png" alt=""></p>
 <p>A solução pra o problema do buraco é, quando fizermos uma remoção, utilizarmos um símbolo, que indica que ali é um espaço vazio, mas que o próximo elemento deve ser conferido também. Coleguinha chama esse símbolo de &ldquo;AVAILABLE&rdquo;.</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/2024-09-28-23-59-19-image.png" alt=""></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/2024-09-28-23-59-19-image.png" alt=""></p>
 <p>Ufa! Temos uma tabela hash com linear probing funcional. O objeto AVAILABLE simboliza que aquele índice pode ser passado numa pesquisa, mas que também está disponível (no inglês, available) para inserção.</p>
 <p>Porém, eu não gosto dessa abordagem. Pra usar ela, o tipo do atributo que usamos como chave para nossos valores na table precisa ser Object, e isso não é tão limpo: generalizar o tipo de todo um conjunto pra satisfazer uma condição excepcional.</p>
 <p>&hellip;&hellip;.. COMO EU AINDA NÃO CITEI TAMANHO MÁXIMO DO ARRAY, É BOM DEIXAR ESSA PARTE PRA MAIS PRA FRENTE.</p>
@@ -259,9 +259,9 @@ stroke-linejoin="round" class="feather feather-home">
 <p>Acho mais interesante usarmos a seguinte opção: O nosso &ldquo;available&rdquo; será um número que não poderemos usar. O ideal pra isso é o número máximo que o tipo do atributo da chave suportar. Como uso <strong>int</strong>, nosso símbolo de available será o número 2 147 483 647. Em java, podemos acessar esse valor por meio de</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Integer</span><span class="p">.</span><span class="na">MAX_VALUE</span><span class="w">
 </span></span></span></code></pre></div><p>Logo, nosso exemplo ficaria assim:</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/2024-09-29-00-11-37-image.png" alt=""></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/2024-09-29-00-11-37-image.png" alt=""></p>
 <p>Vamos adicionar mais alguns elementos:</p>
-<p><img src="/posts/3-dsa-hashtables/imagens/2024-09-29-00-41-25-image.png" alt=""></p>
+<p><img src="http://localhost:1313/posts/3-dsa-hashtables/imagens/2024-09-29-00-41-25-image.png" alt=""></p>
 <p>Note que a tabela é circular.</p>
 <p>Talvez você tenha sacado que há um problema: Com o tempo, a busca <u>degenera</u>. Imagine que, se você sempre trata a colisão deslocando um elemento pra direita, <u>a busca pode precisar checar todos os elementos seguintes até achar a chave pesquisada</u>, ou mesmo simplesmente constatar que ela não está na tabela.</p>
 <p>Pra evitar isso, precisamos garantir que o array não fique muito cheio, sempre mantendo o preenchimento abaixo de 50% aumentando o tamanho.</p>
@@ -300,7 +300,7 @@ stroke-linejoin="round" class="feather feather-home">
     <circle cx="4" cy="4" r="2"></circle>
 </svg>
 </a>
-<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+<a href="http://localhost:1313/index.xml" target="_blank" rel="noopener noreferrer me"
     title="Rss">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
     stroke-linecap="round" stroke-linejoin="round">
