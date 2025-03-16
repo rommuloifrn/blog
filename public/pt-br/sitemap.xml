@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/1-como-funciona-jwt/como-funcionam-tokens-jwt/</loc>
-    <lastmod>2025-02-15T23:33:06-03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-15T23:33:06-03:00</lastmod>
+    <lastmod>2025-03-16T02:11:42-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -19,7 +16,16 @@
                 />
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-03-16T02:11:42-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/4-dsa-heaptrees/heaptrees/</loc>
+    <lastmod>2025-03-16T02:11:42-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/1-como-funciona-jwt/como-funcionam-tokens-jwt/</loc>
     <lastmod>2025-02-15T23:33:06-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/3-dsa-hashtables/hashtables/</loc>
+    <lastmod>2024-09-15T17:34:06-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pages/about/</loc>
   </url><url>

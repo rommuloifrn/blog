@@ -6,7 +6,7 @@
     <description>Recent content on Awesome Hugo blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 15 Feb 2025 23:33:06 -0300</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Mar 2025 02:11:42 -0300</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A lógica da segurança por trás dos tokens JWT</title>
       <link>http://localhost:1313/posts/1-como-funciona-jwt/como-funcionam-tokens-jwt/</link>
@@ -15,9 +15,22 @@
       <guid>http://localhost:1313/posts/1-como-funciona-jwt/como-funcionam-tokens-jwt/</guid>
       
       <description>&lt;h1 id=&#34;a-lógica-da-segurança-por-trás-dos-tokens-jwt&#34;&gt;A lógica da segurança por trás dos tokens JWT&lt;/h1&gt;
-&lt;p&gt;Eu, mesmo sabendo fazer autenticação RESTful no Spring por bastante tempo, ainda confundia minha cabeça pra entender como o JWT é seguro. Esse é um apanhado geral do tema.&lt;/p&gt;
+&lt;p&gt;Eu, mesmo sabendo fazer autenticação RESTful no Spring por bastante tempo, ainda confundia minha cabeça pra entender como o JWT é seguro. Como assim passar informações em um token que pode ser facilmente ser decodificado? Esse é um apanhado geral do tema que busca explicar isso.&lt;/p&gt;
 &lt;h2 id=&#34;1-tokens-web&#34;&gt;1: Tokens web&lt;/h2&gt;
 &lt;p&gt;No contexto de APIs web, tokens são &amp;ldquo;chaves&amp;rdquo; que utilizamos para o servidor verificar quem somos. Geralmente recebemos um token no login, e temos de guardar a informação no front-end para utilizá-la junto das nossas próximas requisições para acessar recursos restritos &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hashtables</title>
+      <link>http://localhost:1313/posts/3-dsa-hashtables/hashtables/</link>
+      <pubDate>Sun, 15 Sep 2024 17:34:06 -0300</pubDate>
+      
+      <guid>http://localhost:1313/posts/3-dsa-hashtables/hashtables/</guid>
+      
+      <description>&lt;h1 id=&#34;hashtable-tabela-de-dispersão&#34;&gt;Hashtable (tabela de dispersão)&lt;/h1&gt;
+&lt;p&gt;A hashtable é uma implementação do dicionário, que por meio de uma &lt;b&gt;função de dispersão&lt;/b&gt; consegue dispôr os elementos na lista de forma &amp;ldquo;aleatória&amp;rdquo;, mantendo a complexidade temporal da pesquisa em O(1).&lt;/p&gt;
+&lt;p&gt;A ideia é que, usando um array, a função de dispersão defina a posição do elemento sendo inserido. Como essa posição é calculada em (O(1)), a pesquisa usando a mesma chave vai chamar a função de dispersão e acessar direto o endereço do elemento no array, em tempo constante.&lt;/p&gt;</description>
       
     </item>
     
