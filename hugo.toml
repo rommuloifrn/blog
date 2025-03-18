@@ -137,7 +137,7 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
-  description = "ara rodar um blog ou site pessoal"
+  description = "Notas sobre as coisas que estudo."
   mainSections = ['posts']
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
@@ -159,7 +159,7 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "Rômulo"
   name = "Rômulo S"
-  description = "Desenvolvedor web, entusiasta de espeleologia."
+  description = "Full stack dev. CEO do meu quarto."
 
 # Allow to override webmanifest options
 [Languages.pt-br.params.webmanifest]
