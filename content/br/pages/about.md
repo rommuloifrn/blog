@@ -3,8 +3,12 @@ title = "Sobre mim"
 toc = false
 +++
 
-Olá.
+Olá. Me Chamo Rômulo. Gosto de ler e escrever.
 
-Eu sou metido com geologia e gosto da parte de *análise* em "análise e desenvolvimento de sistemas".
+# Experiência
 
-Se você tem a mínima ideia de algo que gostaria de desenvolver comigo, mande um email pra romulo.s@escolar.ifrn.edu.br.
+Você pode checar o [meu portfólio](https://rommuloifrn.github.io/).
+
+Eu uns bons 3 anos com Django monolítico, dando manutenção num projeto que fiz para o MMRN e em side-projects. Também venho estudando Spring, Django REST e Angular.
+
+Também tenho algum estudo em geologia, especificamente a área de espeleologia.
