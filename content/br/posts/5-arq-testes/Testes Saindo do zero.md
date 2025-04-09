@@ -22,3 +22,16 @@ Esses carinhas (os testes) garantem estabilidade. Eles são como pequenos colega
 
 E hoje eu queria te mostrar como eles funcionam: Seus tipos, como trabalham e onde vivem.
 
+## Antes, uma breve distinção
+
+Existem testes manuais e automatizados. Aqui, estarei tratando exclusivamente dos testes automatizados.
+
+## Testes unitários (ou de unidade) e como testes funcionam no geral
+
+Essa categoria testa funções. É basicamente isso.
+
+No geral, testes utilizam _asserts_ pra checar a veracidade de uma informação.
+
+Vamos dar uma olhada nos seus internos.
+
+- exemplo de um teste unitário

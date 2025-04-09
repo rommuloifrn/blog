@@ -33,6 +33,18 @@ Para uma heap ser considerada *balanceada* [^2], há duas propriedades que ela p
 
 Na inserção da heap, adicionamos o elemento num nó seguindo a propriedade de completude. A forma mais eficiente (O(logN)) de achar a posição de inserção é a seguinte:
 
+Dentro do algoritmo para achar o próximo nó de inserção há **dois casos**. Veja bem, somente **dois casos** e pronto.
+
+1. A árvore está completinha e você vai ter que achar o primeiro nó da última linha
+
+2. A árvore está com a última linha incompleta e você vai precisar achar o irmão do nó que você está ou do de cima
+
+O segundo passo é inserir o nó ali.
+
+Depois, temos que subi-lo na árvore até ele estar na posição adequada.
+
+E é isso.
+
 ### 4.1 Busca do local de inserção
 
 A busca fica bem mais simples se a árvore guardar o último nó inserido. Vamos considerar que o nome desse atributo será **lastNode**.
@@ -45,3 +57,9 @@ A partir de **lastNode**, podemos fazer um caminho O(Log(N)) até o local da ins
 ### 4.2 Upheap
 
 ## 5. Remoção
+
+## Referências
+
+Aulas e slides de Robinson
+
+Aulas de Jorgiano
