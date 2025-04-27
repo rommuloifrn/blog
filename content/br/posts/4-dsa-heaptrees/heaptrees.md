@@ -54,9 +54,17 @@ A partir de **lastNode**, podemos fazer um caminho O(Log(N)) até o local da ins
 - Subir até encontrar um filho esquerdo ou a raiz
 - Caso encontre um filho esquerdo, ir para o filho direito e descer pela esquerda
 
+Dessa forma, podemos inserir o elemento no lugar e tratar a posição dele depois.
+
 ### 4.2 Upheap
 
+Já que colocamos o elemento no último lugar da árvore, precisamos subi-lo até uma posição coerente. Enquanto ele tiver maior prioridade em relação ao elemento de cima, trocamos os dois de lugar.
+
+###### IMAGEM DOS ESTÁGIOS DA INSERÇÃO NA HEAP
+
 ## 5. Remoção
+
+###### COMPLEXIDADES TEMPORAIS
 
 ## Referências
 
